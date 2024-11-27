@@ -12,7 +12,7 @@ export default function CrudUsuarios() {
   const [altura, setAltura] = useState("");
   const [peso, setPeso] = useState("");
   const [operacao, setOperacao] = useState("");
-  const url = "http://localhost:9082/usuarios";
+  const url = "https://backend-web-dusky.vercel.app/usuarios";
   useEffect(() => {
     fetch(url)
       .then((respFetch) => respFetch.json())
